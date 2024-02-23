@@ -8,7 +8,7 @@
 
     using VideoHouseGoldy79.Data.Common.Models;
 
-    public class Review: BaseDeletableModel<int>
+    public class Review : BaseDeletableModel<int>
     {
         public Review()
         {

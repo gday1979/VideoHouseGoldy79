@@ -7,6 +7,8 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using static VideoHouseGoldy79.Data.Common.DataValidation.Director;
+
     public class Director
     {
         public Director()
@@ -15,9 +17,11 @@
         }
 
         [Required]
+        [MaxLength(DirectorFirstNameMaxLength)]
         public string FirstName { get; set; }
 
         [Required]
+        [MaxLength(DirectorLastNameMaxLength)]
         public string LastName { get; set; }
 
         public virtual ICollection<Movie> Movies { get; set; }

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace VideoHouseGoldy79.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(VideoHouseGoldy79DbContext))]
     [Migration("20220607060115_InitialCreate")]
     partial class InitialCreate
     {

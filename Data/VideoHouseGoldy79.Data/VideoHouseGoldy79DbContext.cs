@@ -6,23 +6,44 @@
     using System.Threading;
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+    using Microsoft.EntityFrameworkCore;
     using VideoHouseGoldy79.Data.Common.Models;
     using VideoHouseGoldy79.Data.Models;
 
-    using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-    using Microsoft.EntityFrameworkCore;
-
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
+    public class VideoHouseGoldy79DbContext : IdentityDbContext<ApplicationUser, ApplicationRole, string>
     {
         private static readonly MethodInfo SetIsDeletedQueryFilterMethod =
-            typeof(ApplicationDbContext).GetMethod(
+            typeof(VideoHouseGoldy79DbContext).GetMethod(
                 nameof(SetIsDeletedQueryFilter),
                 BindingFlags.NonPublic | BindingFlags.Static);
 
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        public VideoHouseGoldy79DbContext(DbContextOptions<VideoHouseGoldy79DbContext> options)
             : base(options)
         {
         }
+
+        public DbSet<Actor> Actors { get; set; }
+
+        public DbSet<Actress> Actresses { get; set; }
+
+        public DbSet<Author> Authors { get; set; }
+
+        public DbSet<Movie> Movies { get; set; }
+
+        public DbSet<Review> Reviews { get; set; }
+
+        public DbSet<Genre> Genres { get; set; }
+
+        public DbSet<Director> Directors { get; set; }
+
+        public DbSet<MovieActor> MoviesActors { get; set; }
+
+        public DbSet<MovieActress> MoviesActresses { get; set; }
+
+        public DbSet<ReviewAuthor> ReviewsAuthors { get; set; }
+
+        public DbSet<MovieGenre> MoviesGenres { get; set; }
 
         public DbSet<Setting> Settings { get; set; }
 

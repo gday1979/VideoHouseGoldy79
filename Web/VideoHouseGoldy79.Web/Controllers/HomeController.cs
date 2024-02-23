@@ -2,9 +2,8 @@
 {
     using System.Diagnostics;
 
-    using VideoHouseGoldy79.Web.ViewModels;
-
     using Microsoft.AspNetCore.Mvc;
+    using VideoHouseGoldy79.Web.ViewModels;
 
     public class HomeController : BaseController
     {

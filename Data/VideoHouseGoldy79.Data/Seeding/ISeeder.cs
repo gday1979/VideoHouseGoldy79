@@ -5,6 +5,6 @@
 
     public interface ISeeder
     {
-        Task SeedAsync(ApplicationDbContext dbContext, IServiceProvider serviceProvider);
+        Task SeedAsync(VideoHouseGoldy79DbContext dbContext, IServiceProvider serviceProvider);
     }
 }

@@ -3,12 +3,11 @@
     using System;
     using System.Threading.Tasks;
 
+    using Microsoft.AspNetCore.Mvc;
     using VideoHouseGoldy79.Data.Common.Repositories;
     using VideoHouseGoldy79.Data.Models;
     using VideoHouseGoldy79.Services.Data;
     using VideoHouseGoldy79.Web.ViewModels.Settings;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class SettingsController : BaseController
     {

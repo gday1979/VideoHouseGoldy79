@@ -1,8 +1,8 @@
 ﻿namespace VideoHouseGoldy79.Data.Configurations
 {
-    using VideoHouseGoldy79.Data.Models;
     using Microsoft.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore.Metadata.Builders;
+    using VideoHouseGoldy79.Data.Models;
 
     public class ApplicationUserConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {
