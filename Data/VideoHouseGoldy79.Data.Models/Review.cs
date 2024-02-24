@@ -19,7 +19,7 @@
 
         public string Description { get; set; }
 
-        public DateOnly Date { get; set; }
+        public DateTime Date { get; set; }
 
         public virtual ICollection<MovieReview> MovieReviews { get; set; }
 

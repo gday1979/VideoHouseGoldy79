@@ -5,8 +5,9 @@
     using System.Linq;
     using System.Text;
     using System.Threading.Tasks;
+    using VideoHouseGoldy79.Data.Common.Models;
 
-    public class ReviewAuthor
+    public class ReviewAuthor : IDeletableEntity
     {
         public int AuthorId { get; set; }
 
