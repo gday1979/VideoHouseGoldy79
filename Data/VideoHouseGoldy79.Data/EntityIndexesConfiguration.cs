@@ -2,9 +2,8 @@
 {
     using System.Linq;
 
-    using VideoHouseGoldy79.Data.Common.Models;
-
     using Microsoft.EntityFrameworkCore;
+    using VideoHouseGoldy79.Data.Common.Models;
 
     internal static class EntityIndexesConfiguration
     {

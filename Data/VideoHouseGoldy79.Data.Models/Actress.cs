@@ -1,16 +1,19 @@
 ﻿namespace VideoHouseGoldy79.Data.Models
 {
-    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
+
+    using VideoHouseGoldy79.Data.Common.Models;
 
     using static VideoHouseGoldy79.Data.Common.DataValidation.Actress;
 
-    public class Actress
+    public class Actress : BaseDeletableModel<int>
     {
+        public Actress()
+        {
+            this.MovieActreses = new HashSet<MovieActress>();
+        }
+
         [Required]
         [MaxLength(ActressFirstNameMaxLength)]
         public string FirstName { get; set; }

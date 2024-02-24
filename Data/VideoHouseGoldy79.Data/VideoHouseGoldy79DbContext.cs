@@ -68,6 +68,18 @@
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
+            // needed for many-to-many relationships
+            builder.Entity<MovieActor>()
+                .HasKey(ma => new { ma.MovieId, ma.ActorId });
+            builder.Entity<MovieActress>()
+                .HasKey(ma => new { ma.MovieId, ma.ActressId });
+            builder.Entity<MovieGenre>()
+                .HasKey(mg => new { mg.MovieId, mg.GenreId });
+            builder.Entity<ReviewAuthor>()
+                .HasKey(ra => new { ra.ReviewId, ra.AuthorId });
+            builder.Entity<MovieReview>()
+                .HasKey(mr => new { mr.MovieId, mr.ReviewId });
+
             // Needed for Identity models configuration
             base.OnModelCreating(builder);
 

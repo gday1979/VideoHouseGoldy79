@@ -6,7 +6,9 @@
     using System.Text;
     using System.Threading.Tasks;
 
-    public class MovieActor
+    using VideoHouseGoldy79.Data.Common.Models;
+
+    public class MovieActor : IDeletableEntity
     {
         public int MovieId { get; set; }
 

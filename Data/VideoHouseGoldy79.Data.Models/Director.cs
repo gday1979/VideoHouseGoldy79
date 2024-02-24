@@ -7,9 +7,11 @@
     using System.Text;
     using System.Threading.Tasks;
 
+    using VideoHouseGoldy79.Data.Common.Models;
+
     using static VideoHouseGoldy79.Data.Common.DataValidation.Director;
 
-    public class Director
+    public class Director : BaseDeletableModel<int>
     {
         public Director()
         {

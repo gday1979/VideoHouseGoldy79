@@ -39,6 +39,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoHouseGoldy79.Web.Tests
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VideoHouseGoldy79.Web.ViewModels", "Web\VideoHouseGoldy79.Web.ViewModels\VideoHouseGoldy79.Web.ViewModels.csproj", "{13B7AACB-9C85-4409-8D4B-95A67D0DFFF7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VideoHouseGoldy79.Models.ViewModels", "VideoHouseGoldy79.Models.ViewModels", "{F530A7A6-3E9C-49D5-B3FB-9B337B598FA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VideoHouseGoldy79.Models.InputModels", "VideoHouseGoldy79.Models.InputModels", "{3935B9BE-0B84-4176-8474-22C482339BC4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
