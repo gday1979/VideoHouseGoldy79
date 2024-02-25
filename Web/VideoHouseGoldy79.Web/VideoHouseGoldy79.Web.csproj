@@ -44,4 +44,8 @@
     <ProjectReference Include="..\VideoHouseGoldy79.Web.Infrastructure\VideoHouseGoldy79.Web.Infrastructure.csproj" />
     <ProjectReference Include="..\VideoHouseGoldy79.Web.ViewModels\VideoHouseGoldy79.Web.ViewModels.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
 </Project>

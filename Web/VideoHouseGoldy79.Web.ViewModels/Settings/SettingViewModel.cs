@@ -1,9 +1,8 @@
 ﻿namespace VideoHouseGoldy79.Web.ViewModels.Settings
 {
+    using AutoMapper;
     using VideoHouseGoldy79.Data.Models;
     using VideoHouseGoldy79.Services.Mapping;
-
-    using AutoMapper;
 
     public class SettingViewModel : IMapFrom<Setting>, IHaveCustomMappings
     {

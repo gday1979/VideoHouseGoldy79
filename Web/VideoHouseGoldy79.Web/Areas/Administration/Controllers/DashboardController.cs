@@ -1,9 +1,8 @@
 ﻿namespace VideoHouseGoldy79.Web.Areas.Administration.Controllers
 {
+    using Microsoft.AspNetCore.Mvc;
     using VideoHouseGoldy79.Services.Data;
     using VideoHouseGoldy79.Web.ViewModels.Administration.Dashboard;
-
-    using Microsoft.AspNetCore.Mvc;
 
     public class DashboardController : AdministrationController
     {

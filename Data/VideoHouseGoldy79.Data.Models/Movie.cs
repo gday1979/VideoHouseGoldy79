@@ -26,7 +26,7 @@
         [Required]
         public DateTime DateOfRelease { get; set; }
 
-        public decimal Rating { get; set; }
+        public int Rating { get; set; }
 
         [Required]
         [MaxLength(DescriptionMaxLength)]
